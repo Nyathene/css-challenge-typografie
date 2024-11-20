@@ -1,7 +1,23 @@
 /*******************************/
 /* CODE VOOR HET EERSTE BLOKJE */
 /*******************************/
+@font-face{
+    font-family: "Myst";
+    src:url(../fonts/BlackHan.ttf)
+}
+li:first-of-type{
+    --color:#999999;
+    font-family: "Myst";
+    text-transform: uppercase;
+    color: var(--color);
+    background-color: var(--color);
+    text-shadow: #4e4e4e 0.1em 0.1em 0.1em;
+    font-size: 3em;
 
+    display:grid;
+    place-content:center;
+    text-align:center;
+}
 
 
 
@@ -9,8 +25,28 @@
 /*******************************/
 /* CODE VOOR HET TWEEDE BLOKJE */
 /*******************************/
+@font-face {
+    font-family:"CMYK";
+    src: url(../fonts/Saira-Bold.ttf);
+}
+li:nth-of-type(2){
+    --cmykbg:#19196b;
+    background-color: var(--cmykbg);
+    color: white;
+    font-family: "CMYK";
+    text-transform: uppercase;
+    text-shadow:
+    cyan -0.025em -0.025em,
+    magenta 0.025em -0.025em,
+    yellow 0.05em 0.025em,
+    black -0.025em 0.025em;
+    font-size: 3em;
+    letter-spacing: 0.1em;
 
-
+    display:grid;
+    place-content:center;
+    text-align:center;
+}
 
 
 
@@ -18,16 +54,72 @@
 /* CODE VOOR HET DERDE BLOKJE */
 /******************************/
 
+@font-face {
+    font-family: "Coffee";
+    src: url(../fonts/Ubuntu-Bold.ttf);
+}
+@font-face {
+    font-family: "CoffeeL";
+    src: url(../fonts/Ubuntu-Light.ttf);
+}
 
-
-
+li:nth-of-type(3){
+    --G2:#cd7693;
+    --G1:#d3bed5;
+    --Border:#5f3694;
+    background: linear-gradient(var(--G1), var(--G2));
+    color:white;
+    text-transform: uppercase;
+    font-family: "Coffee";
+    font-size:1.25em;
+    
+    display:grid;
+    place-content:center;
+    text-align:left;
+    grid-auto-columns: min-content;
+}
+li:nth-of-type(3) p{
+    background-color: black;
+    padding: 1em 0.25em 1em;
+    box-shadow: 0em 0em 0em 0.75em white,
+    0em 0em 0em 1.2em var(--Border);
+}
+li:nth-of-type(3) p::first-line{
+    font-family: "CoffeeL";
+}
 
 /******************************/
 /* CODE VOOR HET VIERDE BLOKJE */
 /******************************/
+@font-face {
+    font-family: "Vs";
+    src: url(../fonts/BlackHan.ttf);
+    font-weight: 700;
+}
+li:nth-of-type(4){
+    --G3:#bb271a;
+    --G4:#0000c3;
+    --Border:#5f3694;
+    background: linear-gradient(225deg, var(--G3) 0 50%, var(--G4) 50%);
+    color:white;
+    text-transform: uppercase;
+    font-family: "Vs";
+    font-size:2em;
+    letter-spacing: 0.1em;
+    
+    display:grid;
+    place-content:center;
+    text-align:center;
+    grid-auto-columns: min-content;
+}
 
-
-
+li:nth-of-type(4) p{
+    rotate: 45deg;
+}
+li:nth-of-type(4) em{
+    -webkit-text-stroke: 0.05em white;
+    color:transparent;
+}
 
 
 /******************************/
